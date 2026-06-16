@@ -124,6 +124,7 @@
     "@vercel/queue": "0.1.7",
     "@vercel/speed-insights": "2.0.0",
     "ai": "6.0.184",
+    "ai-sdk-provider-claude-code": "^3.5.0",
     "better-auth": "1.6.11",
     "braintrust": "3.10.0",
     "bullmq": "5.76.10",

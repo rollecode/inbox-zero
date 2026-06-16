@@ -1,8 +1,6 @@
 import { Suspense } from "react";
 import type { Metadata } from "next";
 
-import { Analytics } from "@vercel/analytics/react";
-import { SpeedInsights } from "@vercel/speed-insights/next";
 import { AxiomWebVitals } from "next-axiom";
 import { GoogleTagManager } from "@next/third-parties/google";
 import { Analytics as DubAnalytics } from "@dub/analytics/react";
@@ -150,10 +148,8 @@ export default async function RootLayout({
             <Toaster closeButton richColors theme="light" visibleToasts={9} />
           </GlobalProviders>
         </PostHogProvider>
-        <Analytics />
         <AxiomWebVitals />
         <UTM />
-        <SpeedInsights />
         {env.NEXT_PUBLIC_DUB_REFER_DOMAIN && (
           <DubAnalytics
             apiHost="/_proxy/dub"
